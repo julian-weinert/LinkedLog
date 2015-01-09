@@ -36,7 +36,7 @@ static JTrigger *sharedPlugin;
         // reference to plugin's bundle, for resource access
         self.bundle = plugin;
 		
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(allNotes:) name:nil object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(allNotes:) name:@"IDESourceControlUserDidCommitNotification" object:nil];
 		
         NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
 		
