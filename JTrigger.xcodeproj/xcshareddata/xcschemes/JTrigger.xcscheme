@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "890A4B3E171F031300AFE577"
+               BlueprintIdentifier = "CB95CB3C1A600FE000E4AE6D"
                BuildableName = "JTrigger.xcplugin"
                BlueprintName = "JTrigger"
                ReferencedContainer = "container:JTrigger.xcodeproj">
@@ -61,7 +61,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "890A4B3E171F031300AFE577"
+            BlueprintIdentifier = "CB95CB3C1A600FE000E4AE6D"
             BuildableName = "JTrigger.xcplugin"
             BlueprintName = "JTrigger"
             ReferencedContainer = "container:JTrigger.xcodeproj">

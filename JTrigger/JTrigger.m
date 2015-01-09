@@ -35,19 +35,49 @@ static JTrigger *sharedPlugin;
     if (self = [super init]) {
         // reference to plugin's bundle, for resource access
         self.bundle = plugin;
-        
-        // Create menu items, initialize UI, etc.
-
-        // Sample Menu Item:
-        NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
-        if (menuItem) {
-            [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-            NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Do Action" action:@selector(doMenuAction) keyEquivalent:@""];
-            [actionMenuItem setTarget:self];
-            [[menuItem submenu] addItem:actionMenuItem];
+		
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(allNotes:) name:@"" object:nil];
+		
+        NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
+		
+		if (menuItem) {
+			NSMenuItem *jTriggerConfigMenuItem = [[NSMenuItem alloc] initWithTitle:@"Jenkins Jobs..." action:@selector(noop:) keyEquivalent:@""];
+			
+			NSMenu *jTriggerMenu = [[NSMenu alloc] initWithTitle:@"JTriggerMenu"];
+			
+			NSMenuItem *jTriggerSampleJob = [[NSMenuItem alloc] initWithTitle:@"Build Acrolinx" action:@selector(noop:) keyEquivalent:@""];
+			[jTriggerMenu addItem:jTriggerSampleJob];
+			
+			[jTriggerMenu addItem:[NSMenuItem separatorItem]];
+			[jTriggerMenu addItem:jTriggerConfigMenuItem];
+			[jTriggerMenu setAutoenablesItems:NO];
+			
+			NSMenuItem *jTriggerMenuItem = [[NSMenuItem alloc] init];
+			[jTriggerMenuItem setSubmenu:jTriggerMenu];
+			[jTriggerMenuItem setTitle:@"JTrigger"];
+			[jTriggerMenuItem setEnabled:YES];
+			
+			[[menuItem submenu] addItem:[NSMenuItem separatorItem]];
+			[[menuItem submenu] addItem:jTriggerMenuItem];
         }
     }
     return self;
+}
+
+- (void)noop:(id)sender {
+	
+}
+
+- (void)clickParent {
+	NSLog(@"clickParent");
+}
+
+- (void)clickChild {
+	NSLog(@"clickChild");
+}
+
+- (void)allNotes:(NSNotification *)notif {
+	NSLog(@"notif: %@", notif);
 }
 
 // Sample Action, for menu item:
