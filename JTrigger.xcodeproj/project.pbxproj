@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB95CB411A600FE000E4AE6D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB95CB401A600FE000E4AE6D /* AppKit.framework */; };
+		CB95CB431A600FE000E4AE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB95CB421A600FE000E4AE6D /* Foundation.framework */; };
+		CB95CB481A600FE000E4AE6D /* JTrigger.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = CB95CB471A600FE000E4AE6D /* JTrigger.xcscheme */; };
+		CB95CB4B1A600FE000E4AE6D /* JTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB95CB4A1A600FE000E4AE6D /* JTrigger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB95CB3D1A600FE000E4AE6D /* JTrigger.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTrigger.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB95CB401A600FE000E4AE6D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		CB95CB421A600FE000E4AE6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		CB95CB461A600FE000E4AE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB95CB471A600FE000E4AE6D /* JTrigger.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = JTrigger.xcscheme; path = JTrigger.xcodeproj/xcshareddata/xcschemes/JTrigger.xcscheme; sourceTree = SOURCE_ROOT; };
+		CB95CB491A600FE000E4AE6D /* JTrigger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTrigger.h; sourceTree = "<group>"; };
+		CB95CB4A1A600FE000E4AE6D /* JTrigger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTrigger.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB95CB3B1A600FE000E4AE6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB95CB411A600FE000E4AE6D /* AppKit.framework in Frameworks */,
+				CB95CB431A600FE000E4AE6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB95CB341A600FE000E4AE6D = {
+			isa = PBXGroup;
+			children = (
+				CB95CB441A600FE000E4AE6D /* JTrigger */,
+				CB95CB3F1A600FE000E4AE6D /* Frameworks */,
+				CB95CB3E1A600FE000E4AE6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB95CB3E1A600FE000E4AE6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB95CB3D1A600FE000E4AE6D /* JTrigger.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB95CB3F1A600FE000E4AE6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB95CB401A600FE000E4AE6D /* AppKit.framework */,
+				CB95CB421A600FE000E4AE6D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB95CB441A600FE000E4AE6D /* JTrigger */ = {
+			isa = PBXGroup;
+			children = (
+				CB95CB491A600FE000E4AE6D /* JTrigger.h */,
+				CB95CB4A1A600FE000E4AE6D /* JTrigger.m */,
+				CB95CB451A600FE000E4AE6D /* Supporting Files */,
+			);
+			path = JTrigger;
+			sourceTree = "<group>";
+		};
+		CB95CB451A600FE000E4AE6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB95CB461A600FE000E4AE6D /* Info.plist */,
+				CB95CB471A600FE000E4AE6D /* JTrigger.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB95CB3C1A600FE000E4AE6D /* JTrigger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB95CB4E1A600FE000E4AE6D /* Build configuration list for PBXNativeTarget "JTrigger" */;
+			buildPhases = (
+				CB95CB391A600FE000E4AE6D /* Sources */,
+				CB95CB3A1A600FE000E4AE6D /* Resources */,
+				CB95CB3B1A600FE000E4AE6D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTrigger;
+			productName = JTrigger;
+			productReference = CB95CB3D1A600FE000E4AE6D /* JTrigger.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB95CB351A600FE000E4AE6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Julian Weinert Softwareentwicklung";
+				TargetAttributes = {
+					CB95CB3C1A600FE000E4AE6D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = CB95CB381A600FE000E4AE6D /* Build configuration list for PBXProject "JTrigger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CB95CB341A600FE000E4AE6D;
+			productRefGroup = CB95CB3E1A600FE000E4AE6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB95CB3C1A600FE000E4AE6D /* JTrigger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB95CB3A1A600FE000E4AE6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB95CB481A600FE000E4AE6D /* JTrigger.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB95CB391A600FE000E4AE6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB95CB4B1A600FE000E4AE6D /* JTrigger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB95CB4C1A600FE000E4AE6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		CB95CB4D1A600FE000E4AE6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		CB95CB4F1A600FE000E4AE6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = JTrigger/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		CB95CB501A600FE000E4AE6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = JTrigger/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB95CB381A600FE000E4AE6D /* Build configuration list for PBXProject "JTrigger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB95CB4C1A600FE000E4AE6D /* Debug */,
+				CB95CB4D1A600FE000E4AE6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB95CB4E1A600FE000E4AE6D /* Build configuration list for PBXNativeTarget "JTrigger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB95CB4F1A600FE000E4AE6D /* Debug */,
+				CB95CB501A600FE000E4AE6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB95CB351A600FE000E4AE6D /* Project object */;
+}
