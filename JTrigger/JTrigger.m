@@ -75,18 +75,17 @@ static JTrigger *sharedPlugin;
 
 - (void)willCommit {
 	NSLog(@"IDESourceControlUserWillCommitNotification");
-	
 	_committing = YES;
 	
+}
+
+- (void)didCommit {
+	NSLog(@"IDESourceControlUserDidCommitNotification");
 	[self performSelector:@selector(endCommitting) withObject:nil afterDelay:3];
 }
 
 - (void)endCommitting {
 	_committing = NO;
-}
-
-- (void)didCommit {
-	NSLog(@"IDESourceControlUserDidCommitNotification");
 }
 
 - (void)allNotifications:(NSNotification *)notif {
