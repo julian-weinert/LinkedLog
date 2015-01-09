@@ -13,6 +13,10 @@ static JTrigger *sharedPlugin;
 @interface JTrigger()
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
+@property (nonatomic, retain) NSInvocation *invoke;
+@property (nonatomic, retain) NSTimer *timer;
+@property (atomic, assign) BOOL committing;
+
 @end
 
 @implementation JTrigger
@@ -31,12 +35,16 @@ static JTrigger *sharedPlugin;
     return sharedPlugin;
 }
 
+-(void)noop:(id)sender{}
+
 - (id)initWithBundle:(NSBundle *)plugin {
     if (self = [super init]) {
         // reference to plugin's bundle, for resource access
         self.bundle = plugin;
 		
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(allNotes:) name:@"IDESourceControlUserDidCommitNotification" object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willCommit) name:@"IDESourceControlUserWillCommitNotification" object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didCommit) name:@"IDESourceControlUserDidCommitNotification" object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(allNotifications:) name:nil object:nil];
 		
         NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
 		
@@ -61,23 +69,30 @@ static JTrigger *sharedPlugin;
 			[[menuItem submenu] addItem:jTriggerMenuItem];
         }
     }
+	
     return self;
 }
 
-- (void)noop:(id)sender {
+- (void)willCommit {
+	NSLog(@"IDESourceControlUserWillCommitNotification");
 	
+	_committing = YES;
+	
+	[self performSelector:@selector(endCommitting) withObject:nil afterDelay:3];
 }
 
-- (void)clickParent {
-	NSLog(@"clickParent");
+- (void)endCommitting {
+	_committing = NO;
 }
 
-- (void)clickChild {
-	NSLog(@"clickChild");
+- (void)didCommit {
+	NSLog(@"IDESourceControlUserDidCommitNotification");
 }
 
-- (void)allNotes:(NSNotification *)notif {
-	NSLog(@"notif: %@", notif);
+- (void)allNotifications:(NSNotification *)notif {
+	if ([self committing]) {
+		printf(".");
+	}
 }
 
 // Sample Action, for menu item:
