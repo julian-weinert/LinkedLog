@@ -7,14 +7,16 @@
 //
 
 #import "JTrigger.h"
+#import "JWJobsController.h"
 
 static JTrigger *sharedPlugin;
 
 @interface JTrigger()
 
-@property (nonatomic, strong, readwrite) NSBundle *bundle;
+@property (nonatomic, retain) JWJobsController *jobsController;
 @property (nonatomic, retain) NSInvocation *invoke;
 @property (nonatomic, retain) NSTimer *timer;
+
 @property (atomic, assign) BOOL committing;
 
 @end
@@ -35,7 +37,20 @@ static JTrigger *sharedPlugin;
     return sharedPlugin;
 }
 
+#pragma mark - property getter and setter overrides
+
+- (JWJobsController *)jobsController {
+	@synchronized (self) {
+		if (!_jobsController) {
+			_jobsController = [JWJobsController controller];
+		}
+	}
+	return _jobsController;
+}
+
+#pragma mark - NOOP
 -(void)noop:(id)sender{}
+#pragma mark - implementation
 
 - (id)initWithBundle:(NSBundle *)plugin {
     if (self = [super init]) {
@@ -49,7 +64,8 @@ static JTrigger *sharedPlugin;
         NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
 		
 		if (menuItem) {
-			NSMenuItem *jTriggerConfigMenuItem = [[NSMenuItem alloc] initWithTitle:@"Jenkins Jobs..." action:@selector(noop:) keyEquivalent:@""];
+			NSMenuItem *jTriggerConfigMenuItem = [[NSMenuItem alloc] initWithTitle:@"Jenkins Jobs..." action:@selector(openJenkinsJobs:) keyEquivalent:@""];
+			[jTriggerConfigMenuItem setTarget:self];
 			
 			NSMenu *jTriggerMenu = [[NSMenu alloc] initWithTitle:@"JTriggerMenu"];
 			
@@ -90,8 +106,12 @@ static JTrigger *sharedPlugin;
 
 - (void)allNotifications:(NSNotification *)notif {
 	if ([self committing]) {
-		printf(".");
+		
 	}
+}
+
+- (void)openJenkinsJobs:(id)sender {
+	[[self jobsController] showWindow:sender];
 }
 
 // Sample Action, for menu item:

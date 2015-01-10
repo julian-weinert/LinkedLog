@@ -11,6 +11,10 @@
 		CB95CB431A600FE000E4AE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB95CB421A600FE000E4AE6D /* Foundation.framework */; };
 		CB95CB481A600FE000E4AE6D /* JTrigger.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = CB95CB471A600FE000E4AE6D /* JTrigger.xcscheme */; };
 		CB95CB4B1A600FE000E4AE6D /* JTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB95CB4A1A600FE000E4AE6D /* JTrigger.m */; };
+		CBAAD0171A605219009CE64D /* JWJobsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAAD0151A605219009CE64D /* JWJobsController.m */; };
+		CBAAD0181A605219009CE64D /* JWJobsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAAD0161A605219009CE64D /* JWJobsController.xib */; };
+		CBAAD01B1A605D75009CE64D /* JWJob.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAAD01A1A605D75009CE64D /* JWJob.m */; };
+		CBAAD01E1A605E13009CE64D /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAAD01D1A605E13009CE64D /* SSKeychain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,13 @@
 		CB95CB471A600FE000E4AE6D /* JTrigger.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = JTrigger.xcscheme; path = JTrigger.xcodeproj/xcshareddata/xcschemes/JTrigger.xcscheme; sourceTree = SOURCE_ROOT; };
 		CB95CB491A600FE000E4AE6D /* JTrigger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTrigger.h; sourceTree = "<group>"; };
 		CB95CB4A1A600FE000E4AE6D /* JTrigger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTrigger.m; sourceTree = "<group>"; };
+		CBAAD0141A605219009CE64D /* JWJobsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWJobsController.h; sourceTree = "<group>"; };
+		CBAAD0151A605219009CE64D /* JWJobsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWJobsController.m; sourceTree = "<group>"; };
+		CBAAD0161A605219009CE64D /* JWJobsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWJobsController.xib; sourceTree = "<group>"; };
+		CBAAD0191A605D75009CE64D /* JWJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWJob.h; sourceTree = "<group>"; };
+		CBAAD01A1A605D75009CE64D /* JWJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWJob.m; sourceTree = "<group>"; };
+		CBAAD01C1A605E13009CE64D /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		CBAAD01D1A605E13009CE64D /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +78,13 @@
 			children = (
 				CB95CB491A600FE000E4AE6D /* JTrigger.h */,
 				CB95CB4A1A600FE000E4AE6D /* JTrigger.m */,
+				CBAAD0191A605D75009CE64D /* JWJob.h */,
+				CBAAD01A1A605D75009CE64D /* JWJob.m */,
+				CBAAD0141A605219009CE64D /* JWJobsController.h */,
+				CBAAD0151A605219009CE64D /* JWJobsController.m */,
+				CBAAD0161A605219009CE64D /* JWJobsController.xib */,
+				CBAAD01C1A605E13009CE64D /* SSKeychain.h */,
+				CBAAD01D1A605E13009CE64D /* SSKeychain.m */,
 				CB95CB451A600FE000E4AE6D /* Supporting Files */,
 			);
 			path = JTrigger;
@@ -137,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAAD0181A605219009CE64D /* JWJobsController.xib in Resources */,
 				CB95CB481A600FE000E4AE6D /* JTrigger.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAAD01B1A605D75009CE64D /* JWJob.m in Sources */,
+				CBAAD01E1A605E13009CE64D /* SSKeychain.m in Sources */,
+				CBAAD0171A605219009CE64D /* JWJobsController.m in Sources */,
 				CB95CB4B1A600FE000E4AE6D /* JTrigger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +293,7 @@
 				CB95CB501A600FE000E4AE6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,7 +10,8 @@
 
 @interface JTrigger : NSObject
 
+@property (nonatomic, retain) NSBundle *bundle;
+
 + (instancetype)sharedPlugin;
 
-@property (nonatomic, strong, readonly) NSBundle* bundle;
 @end
