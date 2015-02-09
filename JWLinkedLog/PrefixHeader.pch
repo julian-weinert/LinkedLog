@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  JTrigger
+//
+//  Created by Julian Weinert on 11.01.15.
+//  Copyright (c) 2015 Julian Weinert Softwareentwicklung. All rights reserved.
+//
+
+#import <AppKit/AppKit.h>
+
+#ifndef JTrigger_PrefixHeader_pch
+#define JTrigger_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifndef XLog
+ #define XLogF(format, ...) NSLog(@"%@:%i: %@\n", [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:format, ##__VA_ARGS__]);
+
+ #ifdef DEBUG
+  #define XLog(format, ...) XLogF(format, ##__VA_ARGS__);
+ #else
+  #define XLog(format, ...)
+ #endif
+#endif
+
+#endif

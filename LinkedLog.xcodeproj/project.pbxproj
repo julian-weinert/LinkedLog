@@ -7,31 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB1684561A8932AB002F3D2F /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1684531A8932AB002F3D2F /* JRSwizzle.m */; };
+		CB1684571A8932AB002F3D2F /* NSTextStorage+findInFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1684551A8932AB002F3D2F /* NSTextStorage+findInFiles.m */; };
 		CB95CB411A600FE000E4AE6D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB95CB401A600FE000E4AE6D /* AppKit.framework */; };
 		CB95CB431A600FE000E4AE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB95CB421A600FE000E4AE6D /* Foundation.framework */; };
-		CB95CB481A600FE000E4AE6D /* JTrigger.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = CB95CB471A600FE000E4AE6D /* JTrigger.xcscheme */; };
-		CB95CB4B1A600FE000E4AE6D /* JTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB95CB4A1A600FE000E4AE6D /* JTrigger.m */; };
-		CBAAD0171A605219009CE64D /* JWJobsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAAD0151A605219009CE64D /* JWJobsController.m */; };
-		CBAAD0181A605219009CE64D /* JWJobsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAAD0161A605219009CE64D /* JWJobsController.xib */; };
-		CBAAD01B1A605D75009CE64D /* JWJob.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAAD01A1A605D75009CE64D /* JWJob.m */; };
-		CBAAD01E1A605E13009CE64D /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAAD01D1A605E13009CE64D /* SSKeychain.m */; };
+		CB95CB4B1A600FE000E4AE6D /* JWLinkedLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CB95CB4A1A600FE000E4AE6D /* JWLinkedLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB95CB3D1A600FE000E4AE6D /* JTrigger.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTrigger.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1684521A8932AB002F3D2F /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		CB1684531A8932AB002F3D2F /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		CB1684541A8932AB002F3D2F /* NSTextStorage+findInFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextStorage+findInFiles.h"; sourceTree = "<group>"; };
+		CB1684551A8932AB002F3D2F /* NSTextStorage+findInFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextStorage+findInFiles.m"; sourceTree = "<group>"; };
+		CB16845C1A894811002F3D2F /* DVTSourceExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTSourceExpression.h; sourceTree = "<group>"; };
+		CB95CB3D1A600FE000E4AE6D /* LinkedLog.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedLog.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB95CB401A600FE000E4AE6D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		CB95CB421A600FE000E4AE6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		CB95CB461A600FE000E4AE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB95CB471A600FE000E4AE6D /* JTrigger.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = JTrigger.xcscheme; path = JTrigger.xcodeproj/xcshareddata/xcschemes/JTrigger.xcscheme; sourceTree = SOURCE_ROOT; };
-		CB95CB491A600FE000E4AE6D /* JTrigger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTrigger.h; sourceTree = "<group>"; };
-		CB95CB4A1A600FE000E4AE6D /* JTrigger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTrigger.m; sourceTree = "<group>"; };
-		CBAAD0141A605219009CE64D /* JWJobsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWJobsController.h; sourceTree = "<group>"; };
-		CBAAD0151A605219009CE64D /* JWJobsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWJobsController.m; sourceTree = "<group>"; };
-		CBAAD0161A605219009CE64D /* JWJobsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWJobsController.xib; sourceTree = "<group>"; };
-		CBAAD0191A605D75009CE64D /* JWJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWJob.h; sourceTree = "<group>"; };
-		CBAAD01A1A605D75009CE64D /* JWJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWJob.m; sourceTree = "<group>"; };
-		CBAAD01C1A605E13009CE64D /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
-		CBAAD01D1A605E13009CE64D /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		CB95CB491A600FE000E4AE6D /* JWLinkedLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLinkedLog.h; sourceTree = "<group>"; };
+		CB95CB4A1A600FE000E4AE6D /* JWLinkedLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLinkedLog.m; sourceTree = "<group>"; };
+		CBEE7ECC1A61F1C3003DD744 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +45,7 @@
 		CB95CB341A600FE000E4AE6D = {
 			isa = PBXGroup;
 			children = (
-				CB95CB441A600FE000E4AE6D /* JTrigger */,
+				CB95CB441A600FE000E4AE6D /* JWLinkedLog */,
 				CB95CB3F1A600FE000E4AE6D /* Frameworks */,
 				CB95CB3E1A600FE000E4AE6D /* Products */,
 			);
@@ -59,7 +54,7 @@
 		CB95CB3E1A600FE000E4AE6D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB95CB3D1A600FE000E4AE6D /* JTrigger.xcplugin */,
+				CB95CB3D1A600FE000E4AE6D /* LinkedLog.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,28 +68,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB95CB441A600FE000E4AE6D /* JTrigger */ = {
+		CB95CB441A600FE000E4AE6D /* JWLinkedLog */ = {
 			isa = PBXGroup;
 			children = (
-				CB95CB491A600FE000E4AE6D /* JTrigger.h */,
-				CB95CB4A1A600FE000E4AE6D /* JTrigger.m */,
-				CBAAD0191A605D75009CE64D /* JWJob.h */,
-				CBAAD01A1A605D75009CE64D /* JWJob.m */,
-				CBAAD0141A605219009CE64D /* JWJobsController.h */,
-				CBAAD0151A605219009CE64D /* JWJobsController.m */,
-				CBAAD0161A605219009CE64D /* JWJobsController.xib */,
-				CBAAD01C1A605E13009CE64D /* SSKeychain.h */,
-				CBAAD01D1A605E13009CE64D /* SSKeychain.m */,
+				CB95CB491A600FE000E4AE6D /* JWLinkedLog.h */,
+				CB95CB4A1A600FE000E4AE6D /* JWLinkedLog.m */,
+				CB1684521A8932AB002F3D2F /* JRSwizzle.h */,
+				CB1684531A8932AB002F3D2F /* JRSwizzle.m */,
+				CB16845C1A894811002F3D2F /* DVTSourceExpression.h */,
+				CB1684541A8932AB002F3D2F /* NSTextStorage+findInFiles.h */,
+				CB1684551A8932AB002F3D2F /* NSTextStorage+findInFiles.m */,
 				CB95CB451A600FE000E4AE6D /* Supporting Files */,
 			);
-			path = JTrigger;
+			path = JWLinkedLog;
 			sourceTree = "<group>";
 		};
 		CB95CB451A600FE000E4AE6D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CBEE7ECC1A61F1C3003DD744 /* PrefixHeader.pch */,
 				CB95CB461A600FE000E4AE6D /* Info.plist */,
-				CB95CB471A600FE000E4AE6D /* JTrigger.xcscheme */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -102,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB95CB3C1A600FE000E4AE6D /* JTrigger */ = {
+		CB95CB3C1A600FE000E4AE6D /* LinkedLog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB95CB4E1A600FE000E4AE6D /* Build configuration list for PBXNativeTarget "JTrigger" */;
+			buildConfigurationList = CB95CB4E1A600FE000E4AE6D /* Build configuration list for PBXNativeTarget "LinkedLog" */;
 			buildPhases = (
 				CB95CB391A600FE000E4AE6D /* Sources */,
 				CB95CB3A1A600FE000E4AE6D /* Resources */,
@@ -114,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = JTrigger;
-			productName = JTrigger;
-			productReference = CB95CB3D1A600FE000E4AE6D /* JTrigger.xcplugin */;
+			name = LinkedLog;
+			productName = JWLinkedLog;
+			productReference = CB95CB3D1A600FE000E4AE6D /* LinkedLog.xcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CB95CB381A600FE000E4AE6D /* Build configuration list for PBXProject "JTrigger" */;
+			buildConfigurationList = CB95CB381A600FE000E4AE6D /* Build configuration list for PBXProject "LinkedLog" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -145,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB95CB3C1A600FE000E4AE6D /* JTrigger */,
+				CB95CB3C1A600FE000E4AE6D /* LinkedLog */,
 			);
 		};
 /* End PBXProject section */
@@ -155,8 +148,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBAAD0181A605219009CE64D /* JWJobsController.xib in Resources */,
-				CB95CB481A600FE000E4AE6D /* JTrigger.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,10 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBAAD01B1A605D75009CE64D /* JWJob.m in Sources */,
-				CBAAD01E1A605E13009CE64D /* SSKeychain.m in Sources */,
-				CBAAD0171A605219009CE64D /* JWJobsController.m in Sources */,
-				CB95CB4B1A600FE000E4AE6D /* JTrigger.m in Sources */,
+				CB1684561A8932AB002F3D2F /* JRSwizzle.m in Sources */,
+				CB95CB4B1A600FE000E4AE6D /* JWLinkedLog.m in Sources */,
+				CB1684571A8932AB002F3D2F /* NSTextStorage+findInFiles.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +242,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
-				INFOPLIST_FILE = JTrigger/Info.plist;
+				GCC_PREFIX_HEADER = JWLinkedLog/PrefixHeader.pch;
+				INFOPLIST_FILE = JWLinkedLog/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LinkedLog;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
@@ -266,10 +257,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
-				INFOPLIST_FILE = JTrigger/Info.plist;
+				GCC_PREFIX_HEADER = JWLinkedLog/PrefixHeader.pch;
+				INFOPLIST_FILE = JWLinkedLog/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LinkedLog;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
@@ -277,7 +269,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB95CB381A600FE000E4AE6D /* Build configuration list for PBXProject "JTrigger" */ = {
+		CB95CB381A600FE000E4AE6D /* Build configuration list for PBXProject "LinkedLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB95CB4C1A600FE000E4AE6D /* Debug */,
@@ -286,7 +278,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB95CB4E1A600FE000E4AE6D /* Build configuration list for PBXNativeTarget "JTrigger" */ = {
+		CB95CB4E1A600FE000E4AE6D /* Build configuration list for PBXNativeTarget "LinkedLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB95CB4F1A600FE000E4AE6D /* Debug */,

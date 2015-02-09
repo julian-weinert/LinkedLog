@@ -1,0 +1,15 @@
+digraph G {
+	node [shape=box];
+	"JRSwizzle" -> {};
+	"main" -> {};
+	"TSTestTests" -> {};
+	"AppDelegate" -> "JRSwizzle";
+	
+	
+	edge [color=blue, dir=both];
+	
+	edge [color=black];
+	node [shape=plaintext];
+	"Categories" [label="NSTextStorage+findInFiles"];
+}
+

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CB95CB3C1A600FE000E4AE6D"
-               BuildableName = "JTrigger.xcplugin"
-               BlueprintName = "JTrigger"
-               ReferencedContainer = "container:JTrigger.xcodeproj">
+               BuildableName = "LinkedLog.xcplugin"
+               BlueprintName = "LinkedLog"
+               ReferencedContainer = "container:LinkedLog.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB95CB3C1A600FE000E4AE6D"
-            BuildableName = "JTrigger.xcplugin"
-            BlueprintName = "JTrigger"
-            ReferencedContainer = "container:JTrigger.xcodeproj">
+            BuildableName = "LinkedLog.xcplugin"
+            BlueprintName = "LinkedLog"
+            ReferencedContainer = "container:LinkedLog.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB95CB3C1A600FE000E4AE6D"
-            BuildableName = "JTrigger.xcplugin"
-            BlueprintName = "JTrigger"
-            ReferencedContainer = "container:JTrigger.xcodeproj">
+            BuildableName = "LinkedLog.xcplugin"
+            BlueprintName = "LinkedLog"
+            ReferencedContainer = "container:LinkedLog.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CB95CB3C1A600FE000E4AE6D"
-            BuildableName = "JTrigger.xcplugin"
-            BlueprintName = "JTrigger"
-            ReferencedContainer = "container:JTrigger.xcodeproj">
+            BuildableName = "LinkedLog.xcplugin"
+            BlueprintName = "LinkedLog"
+            ReferencedContainer = "container:LinkedLog.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -20,6 +20,15 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>jwlinkedlog</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>DVTPlugInCompatibilityUUIDs</key>
@@ -30,7 +39,7 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSPrincipalClass</key>
-	<string>JTrigger</string>
+	<string>JWLinkedLog</string>
 	<key>XC4Compatible</key>
 	<true/>
 	<key>XCPluginHasUI</key>
