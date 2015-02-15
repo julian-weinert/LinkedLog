@@ -7,6 +7,7 @@
 //
 
 #import <AppKit/AppKit.h>
+#import <Cocoa/Cocoa.h>
 
 #ifndef JTrigger_PrefixHeader_pch
 #define JTrigger_PrefixHeader_pch
@@ -15,7 +16,7 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #ifndef XLog
- #define XLogF(format, ...) NSLog(@"%@:%i: %@\n", [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:format, ##__VA_ARGS__]);
+ #define XLogF(format, ...) NSLog(@"%@:%i: %@", [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:format, ##__VA_ARGS__]);
 
  #ifdef DEBUG
   #define XLog(format, ...) XLogF(format, ##__VA_ARGS__);

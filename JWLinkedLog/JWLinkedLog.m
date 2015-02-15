@@ -11,6 +11,12 @@
 #import "NSTextStorage+findInFiles.h"
 
 #import "DVTSourceExpression.h"
+#import "DVTTextDocumentLocation.h"
+
+#import "DTXcodeUtils.h"
+#import "DTXcodeHeaders.h"
+
+#import <objc/objc-class.h>
 
 @implementation NSTextView (mouseDown)
 - (void)_mouseDown:(NSEvent *)theEvent {
@@ -25,20 +31,47 @@
 	
 	NSDictionary *attributes = [[self attributedString] attributesAtIndex:charIndex effectiveRange:&rangePointer];
 	
-	if (![attributes objectForKey:@"JWLinkedLogLink"]) {
+	if (![attributes objectForKey:@"JWLinkedLogLink"] || ![attributes objectForKey:@"JWLinkedLogLine"]) {
 		[self _mouseDown:theEvent];
 		return;
 	}
 	
-	NSLog(@"here: %@", [attributes objectForKey:@"JWLinkedLogLink"]);
+	NSString *filePath = [attributes objectForKey:@"JWLinkedLogLink"];
+	NSUInteger lineNumber = [[attributes objectForKey:@"JWLinkedLogLine"] integerValue] - 1;
+	
+	IDEWorkspaceWindowController *workspaceController = [DTXcodeUtils currentWorkspaceWindowController];
+	
+	if (workspaceController) {
+		if ([(id<NSApplicationDelegate>)[NSApp delegate] application:NSApp openFile:filePath]) {
+			IDESourceCodeEditor *editor = [DTXcodeUtils currentSourceCodeEditor];
+			
+			if (editor) {
+				NSTextView *textView = [editor textView];
+				
+				if (textView) {
+					NSString *sourceCode = [textView string];
+					
+					NSArray *results = [[NSRegularExpression regularExpressionWithPattern:@"\n" options:0 error:nil] matchesInString:sourceCode options:NSMatchingReportCompletion range:NSMakeRange(0, [sourceCode length])];
+					
+					if ([results count] <= lineNumber) {
+						return;
+					}
+					
+					NSTextCheckingResult *checkingResult = [results objectAtIndex:lineNumber];
+					NSUInteger location = checkingResult.range.location;
+					
+					NSRange lineRange = [sourceCode lineRangeForRange:NSMakeRange(location, 0)];
+					
+					[textView scrollRangeToVisible:lineRange];
+					[textView setSelectedRange:lineRange];
+				}
+			}
+		}
+	}
 }
 @end
 
 static JWLinkedLog *sharedPlugin;
-
-@interface JWLinkedLog()
-
-@end
 
 @implementation JWLinkedLog
 
@@ -47,8 +80,6 @@ static JWLinkedLog *sharedPlugin;
     NSString *currentApplicationName = [[NSBundle mainBundle] infoDictionary][@"CFBundleName"];
     if ([currentApplicationName isEqual:@"Xcode"]) {
 		dispatch_once(&onceToken, ^{
-			
-			
 			
 			sharedPlugin = [[self alloc] initWithBundle:plugin];
 			

@@ -1,5 +1,4 @@
 
-
 @interface DVTTextStorage : NSTextStorage
 /** Whether to syntax highlight the current editor */
 @property(getter=isSyntaxColoringEnabled) BOOL syntaxColoringEnabled;
@@ -45,6 +44,8 @@
 @interface IDESourceCodeEditor : IDEEditor
 @property(readonly) IDESourceCodeDocument *sourceCodeDocument;
 @property(retain) DVTSourceTextView *textView;
+- (id)_jumpToDefinitionOfExpression:(id)arg1 fromScreenPoint:(struct CGPoint)arg2 clickCount:(long long)arg3 modifierFlags:(unsigned long long)arg4;
+- (void)jumpToDefinition:(id)arg1;
 @end
 
 @interface IDEComparisonEditor : IDEEditor

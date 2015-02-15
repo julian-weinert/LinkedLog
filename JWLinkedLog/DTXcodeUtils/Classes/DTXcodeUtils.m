@@ -1,5 +1,5 @@
-#import "DTXcodeUtils.h"
 
+#import "DTXcodeUtils.h"
 #import "DTXcodeHeaders.h"
 
 @implementation DTXcodeUtils
@@ -39,6 +39,13 @@
 
 + (IDEEditor *)currentEditor {
   return [self currentEditorContext].editor;
+}
+
++ (IDESourceCodeEditor *)currentSourceCodeEditor {
+	if ([[self currentEditor] isKindOfClass:NSClassFromString(@"IDESourceCodeEditor")]) {
+		return (IDESourceCodeEditor *)[self currentEditor];
+	}
+	return nil;
 }
 
 + (IDESourceCodeDocument *)currentSourceCodeDocument {

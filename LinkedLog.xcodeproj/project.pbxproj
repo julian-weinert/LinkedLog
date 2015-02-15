@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB1684561A8932AB002F3D2F /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1684531A8932AB002F3D2F /* JRSwizzle.m */; };
 		CB1684571A8932AB002F3D2F /* NSTextStorage+findInFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1684551A8932AB002F3D2F /* NSTextStorage+findInFiles.m */; };
+		CB4C0ADA1A896281004CCD56 /* DTXcodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4C0AD71A896281004CCD56 /* DTXcodeUtils.m */; };
 		CB95CB411A600FE000E4AE6D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB95CB401A600FE000E4AE6D /* AppKit.framework */; };
 		CB95CB431A600FE000E4AE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB95CB421A600FE000E4AE6D /* Foundation.framework */; };
 		CB95CB4B1A600FE000E4AE6D /* JWLinkedLog.m in Sources */ = {isa = PBXBuildFile; fileRef = CB95CB4A1A600FE000E4AE6D /* JWLinkedLog.m */; };
@@ -20,6 +21,12 @@
 		CB1684541A8932AB002F3D2F /* NSTextStorage+findInFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextStorage+findInFiles.h"; sourceTree = "<group>"; };
 		CB1684551A8932AB002F3D2F /* NSTextStorage+findInFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextStorage+findInFiles.m"; sourceTree = "<group>"; };
 		CB16845C1A894811002F3D2F /* DVTSourceExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTSourceExpression.h; sourceTree = "<group>"; };
+		CB4C0AD11A895E9E004CCD56 /* DVTTextDocumentLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTTextDocumentLocation.h; sourceTree = "<group>"; };
+		CB4C0AD21A895EF2004CCD56 /* DVTDocumentLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTDocumentLocation.h; sourceTree = "<group>"; };
+		CB4C0AD31A895F48004CCD56 /* DVTSimpleSerialization-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DVTSimpleSerialization-Protocol.h"; sourceTree = "<group>"; };
+		CB4C0AD61A896281004CCD56 /* DTXcodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTXcodeUtils.h; sourceTree = "<group>"; };
+		CB4C0AD71A896281004CCD56 /* DTXcodeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTXcodeUtils.m; sourceTree = "<group>"; };
+		CB4C0AD91A896281004CCD56 /* DTXcodeHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTXcodeHeaders.h; sourceTree = "<group>"; };
 		CB95CB3D1A600FE000E4AE6D /* LinkedLog.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedLog.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB95CB401A600FE000E4AE6D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		CB95CB421A600FE000E4AE6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -42,6 +49,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB4C0AD41A896281004CCD56 /* DTXcodeUtils */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C0AD51A896281004CCD56 /* Classes */,
+				CB4C0AD81A896281004CCD56 /* XcodeHeaders */,
+			);
+			path = DTXcodeUtils;
+			sourceTree = "<group>";
+		};
+		CB4C0AD51A896281004CCD56 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C0AD61A896281004CCD56 /* DTXcodeUtils.h */,
+				CB4C0AD71A896281004CCD56 /* DTXcodeUtils.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CB4C0AD81A896281004CCD56 /* XcodeHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C0AD91A896281004CCD56 /* DTXcodeHeaders.h */,
+			);
+			path = XcodeHeaders;
+			sourceTree = "<group>";
+		};
 		CB95CB341A600FE000E4AE6D = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +109,12 @@
 				CB1684521A8932AB002F3D2F /* JRSwizzle.h */,
 				CB1684531A8932AB002F3D2F /* JRSwizzle.m */,
 				CB16845C1A894811002F3D2F /* DVTSourceExpression.h */,
+				CB4C0AD21A895EF2004CCD56 /* DVTDocumentLocation.h */,
+				CB4C0AD11A895E9E004CCD56 /* DVTTextDocumentLocation.h */,
+				CB4C0AD31A895F48004CCD56 /* DVTSimpleSerialization-Protocol.h */,
 				CB1684541A8932AB002F3D2F /* NSTextStorage+findInFiles.h */,
 				CB1684551A8932AB002F3D2F /* NSTextStorage+findInFiles.m */,
+				CB4C0AD41A896281004CCD56 /* DTXcodeUtils */,
 				CB95CB451A600FE000E4AE6D /* Supporting Files */,
 			);
 			path = JWLinkedLog;
@@ -159,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB1684561A8932AB002F3D2F /* JRSwizzle.m in Sources */,
+				CB4C0ADA1A896281004CCD56 /* DTXcodeUtils.m in Sources */,
 				CB95CB4B1A600FE000E4AE6D /* JWLinkedLog.m in Sources */,
 				CB1684571A8932AB002F3D2F /* NSTextStorage+findInFiles.m in Sources */,
 			);

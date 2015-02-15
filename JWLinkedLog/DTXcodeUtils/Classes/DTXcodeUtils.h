@@ -1,6 +1,8 @@
+
 @class DVTSourceTextView;
 @class DVTTextStorage;
 @class IDEEditor;
+@class IDESourceCodeEditor;
 @class IDEEditorArea;
 @class IDESourceCodeDocument;
 @class IDEEditorContext;
@@ -14,6 +16,7 @@
 + (IDEEditorArea *)currentEditorArea;
 + (IDEEditorContext *)currentEditorContext;
 + (IDEEditor *)currentEditor;
++ (IDESourceCodeEditor *)currentSourceCodeEditor;
 + (IDESourceCodeDocument *)currentSourceCodeDocument;
 + (DVTSourceTextView *)currentSourceTextView;
 + (DVTTextStorage *)currentTextStorage;
