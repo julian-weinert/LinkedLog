@@ -2,4 +2,5 @@ language: objective-c
 
 # branch whitelist
 branches:
-  only:v1.0
+  only:
+    - v1.0
