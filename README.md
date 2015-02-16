@@ -51,4 +51,5 @@ If you want to contribute, send me a pull request.
 
 Ideas of improvements:
 
-- iOS support
+* iOS support
+* Better way to inject the `LLog` macros (requires adding PCH file for now)
