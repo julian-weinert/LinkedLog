@@ -1,6 +1,6 @@
 //
 //  NSTextStorage+findInFiles.h
-//  TSTest
+//  LinkedLog
 //
 //  Created by Julian Weinert on 09.02.15.
 //  Copyright (c) 2015 Julian Weinert Softwareentwicklung. All rights reserved.
