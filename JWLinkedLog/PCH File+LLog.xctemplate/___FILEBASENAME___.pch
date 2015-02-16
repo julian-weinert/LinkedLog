@@ -1,16 +1,13 @@
 //
-//  PrefixHeader.pch
-//  JWLinkedLog
+//  ___FILENAME___
+//  ___PROJECTNAME___
 //
-//  Created by Julian Weinert on 11.01.15.
-//  Copyright (c) 2015 Julian Weinert Softwareentwicklung. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
 //
 
-#import <AppKit/AppKit.h>
-#import <Cocoa/Cocoa.h>
-
-#ifndef JTrigger_PrefixHeader_pch
-#define JTrigger_PrefixHeader_pch
+#ifndef ___PROJECTNAMEASIDENTIFIER_______FILEBASENAMEASIDENTIFIER_______FILEEXTENSION___
+#define ___PROJECTNAMEASIDENTIFIER_______FILEBASENAMEASIDENTIFIER_______FILEEXTENSION___
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
