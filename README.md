@@ -5,10 +5,6 @@ The `LLog` macro will work like `NSLog` but additionally prints the file name an
 
 LinkedLog then parses the logs and adds links the the corresponding file and line.
 
-[![Build Status](https://api.travis-ci.org/acoomans/ACCodeSnippetRepositoryPlugin.png)](https://api.travis-ci.org/acoomans/ACCodeSnippetRepositoryPlugin.png)
-
-If you want to know more about snippets in Xcode, I recommend reading [Xcode Snippets on NSHipster](http://nshipster.com/xcode-snippets/).
-
 
 ## Install
 
