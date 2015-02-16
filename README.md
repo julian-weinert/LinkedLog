@@ -5,6 +5,8 @@ The `LLog` macro will work like `NSLog` but additionally prints the file name an
 
 LinkedLog then parses the logs and adds links the the corresponding file and line.
 
+[![Build Status](https://travis-ci.org/julian-weinert/LinkedLog.svg?branch=master)](https://travis-ci.org/julian-weinert/LinkedLog)
+
 
 ## Install
 
