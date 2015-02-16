@@ -226,7 +226,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -rf \"$SRCROOT/JWLinkedLog/PCH File+LLog.xctemplate\" \"$HOME/Library/Developer/Xcode/Templates/File Templates/LinkedLog Templates\"";
+			shellScript = "cp -rf \"$SRCROOT/JWLinkedLog/PCH File+LLog.xctemplate\" \"$HOME/Library/Developer/Xcode/Templates/File Templates/LinkedLog Templates/PCH File+LLog.xctemplate\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
