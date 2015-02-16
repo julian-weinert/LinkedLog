@@ -5,6 +5,8 @@ The `LLog` macro will work like `NSLog` but additionally prints the file name an
 
 LinkedLog then parses the logs and adds links the the corresponding file and line.
 
+[![Build Status](https://travis-ci.org/julian-weinert/LinkedLog.svg?branch=master)](https://travis-ci.org/julian-weinert/LinkedLog)
+
 
 ## Install
 
@@ -28,6 +30,11 @@ LinkedLog then parses the logs and adds links the the corresponding file and lin
 Whenever you want a log message, use `LLog(@"string with format: %@", @"'format'");` just as `NSLog`.
 The messages will be omitted when building without `DEBUG` build variable.
 To force logs to also appear in production build use `LLogF` instead.
+
+
+## Screenshot
+
+![LinkedLog](https://raw.githubusercontent.com/julian-weinert/LinkedLog/master/Screenshots/LinkedLog.png)
 
 
 ## Bugs and limitations
