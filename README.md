@@ -32,6 +32,11 @@ The messages will be omitted when building without `DEBUG` build variable.
 To force logs to also appear in production build use `LLogF` instead.
 
 
+## Screenshot
+
+![LinkedLog](https://raw.githubusercontent.com/julian-weinert/LinkedLog/master/Screenshots/LinkedLog.png)
+
+
 ## Bugs and limitations
 
 * The `LLog` and `LLogF` macros are currently not supported in iOS.
