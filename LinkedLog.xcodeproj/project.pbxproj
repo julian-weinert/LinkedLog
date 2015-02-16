@@ -56,7 +56,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB34A6C81A916C66008B586A /* PCH File+LLog.xctemplate */ = {
+		CB34A6C81A916C66008B586A /* pch_file.xctemplate */ = {
 			isa = PBXGroup;
 			children = (
 				CB34A6C91A916C66008B586A /* ___FILEBASENAME___.pch */,
@@ -64,7 +64,7 @@
 				CB34A6CB1A916C66008B586A /* TemplateIcon@2x.png */,
 				CB34A6CC1A916C66008B586A /* TemplateInfo.plist */,
 			);
-			path = "PCH File+LLog.xctemplate";
+			path = pch_file.xctemplate;
 			sourceTree = "<group>";
 		};
 		CB4C0AD41A896281004CCD56 /* DTXcodeUtils */ = {
@@ -141,7 +141,7 @@
 		CB95CB451A600FE000E4AE6D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB34A6C81A916C66008B586A /* PCH File+LLog.xctemplate */,
+				CB34A6C81A916C66008B586A /* pch_file.xctemplate */,
 				CBEE7ECC1A61F1C3003DD744 /* PrefixHeader.pch */,
 				CB95CB461A600FE000E4AE6D /* Info.plist */,
 			);
@@ -226,7 +226,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -rf \"$SRCROOT/JWLinkedLog/PCH File+LLog.xctemplate\" \"$HOME/Library/Developer/Xcode/Templates/File Templates/LinkedLog Templates/PCH File+LLog.xctemplate\"";
+			shellScript = "target_path=\"$HOME/Library/Developer/Xcode/Templates/File Templates/LinkedLog Templates\"\nsource_path=\"$SRCROOT/JWLinkedLog/pch_file.xctemplate\"\n\ntest -d \"$target_path\" || mkdir -p \"$target_path\"\ntest -d \"$target_path/PCH File+LLog.xctemplate/\" && rm -r \"$target_path/PCH File+LLog.xctemplate/\"\ncp -rf \"$source_path\" \"$target_path/PCH File+LLog.xctemplate\"\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
