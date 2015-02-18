@@ -6,6 +6,7 @@ The `LLog` macro will work like `NSLog` but additionally prints the file name an
 LinkedLog then parses the logs and adds links the the corresponding file and line.
 
 [![Build Status](https://travis-ci.org/julian-weinert/LinkedLog.svg?branch=master)](https://travis-ci.org/julian-weinert/LinkedLog)
+[![LinkedLog Gitter room](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/julian-weinert/LinkedLog?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
 ## Install
@@ -14,7 +15,7 @@ LinkedLog then parses the logs and adds links the the corresponding file and lin
 
 2. Restart Xcode for the plugin to be activated.
 
-~~Alternatively, install through [Alcatraz](https://github.com/supermarin/Alcatraz) plugin manager.~~ (Not yet)
+Alternatively, install through [Alcatraz](https://github.com/supermarin/Alcatraz) plugin manager.
 
 
 ## Configuration
