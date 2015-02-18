@@ -6,6 +6,8 @@ The `LLog` macro will work like `NSLog` but additionally prints the file name an
 LinkedLog then parses the logs and adds links to the corresponding file and line.
 
 
+## Status
+
 [![Stories ToDo](https://badge.waffle.io/julian-weinert/linkedlog.svg?label=todo&title=ToDo)](http://waffle.io/julian-weinert/linkedlog)
 [![Stories in Progress](https://badge.waffle.io/julian-weinert/linkedlog.svg?label=progress&title=In%20Progress)](http://waffle.io/julian-weinert/linkedlog)
 [![Stories Done](https://badge.waffle.io/julian-weinert/linkedlog.svg?label=done&title=Done)](http://waffle.io/julian-weinert/linkedlog)
