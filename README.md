@@ -17,10 +17,9 @@ LinkedLog then parses the logs and adds links to the corresponding file and line
 ## Install
 
 1. Build the project to install the plugin. The plugin is installed in `/Library/Application Support/Developer/Shared/Xcode/Plug-ins/LinkedLog.xcplugin`.
-
 2. Restart Xcode for the plugin to be activated.
 
-Alternatively, install through [Alcatraz](https://github.com/supermarin/Alcatraz) plugin manager.
+**Alternatively, install through [Alcatraz plugin manager](https://github.com/supermarin/Alcatraz).**
 
 
 ## Configuration
