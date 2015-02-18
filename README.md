@@ -1,6 +1,6 @@
 # LinkedLog Xcode Plugin
 
-LinkedLog is a Xcode plugin that includes a Xcode PCH header file template that adds the macros `LLog` and `LLogF`.
+LinkedLog is a Xcode plugin that includes a Xcode PCH file template that adds the macros `LLog` and `LLogF`.
 The `LLog` macro will work like `NSLog` but additionally prints the file name and line number of the call.
 
 LinkedLog then parses the logs and adds links the the corresponding file and line.
