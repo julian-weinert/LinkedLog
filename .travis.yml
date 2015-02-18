@@ -1,6 +1,6 @@
 language: objective-c
 
 # branch whitelist
-branches:
-  only:
-    - master
+# branches:
+#   only:
+#     - master
