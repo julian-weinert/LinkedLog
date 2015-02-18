@@ -1,5 +1,7 @@
 # LinkedLog Xcode Plugin
 
+[![Join the chat at https://gitter.im/julian-weinert/LinkedLog](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/julian-weinert/LinkedLog?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 LinkedLog is a Xcode plugin that includes a Xcode PCH header file template that adds the macros `LLog` and `LLogF`.
 The `LLog` macro will work like `NSLog` but additionally prints the file name and line number of the call.
 
