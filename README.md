@@ -57,6 +57,3 @@ If you want to contribute, send me a pull request.
 ### Improvements
 
 [![Stories ToDo](https://badge.waffle.io/julian-weinert/linkedlog.svg?label=todo&title=ToDo)](http://waffle.io/julian-weinert/linkedlog)
-
-* iOS support
-* Better way to inject the `LLog` macros (requires adding PCH file for now)
