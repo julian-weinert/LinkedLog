@@ -27,14 +27,14 @@ LinkedLog then parses the logs and adds links to the corresponding file and line
 * In Xcode select add files to the project.
 * Select the *PCH File+LLog* file template from the *LinkedLog templates* section.
 * Navigate to your build settings, search for **prefix** and add the created file to "Prefix header"
-* Replace all `NSLog` called with `LLog` or `LLogF`
+* Replace all `NSLog` calles with `LLog` or `LLogF`
 
 
 ## Usage
 
 Whenever you want a log message, use `LLog(@"string with format: %@", @"'format'");` just as `NSLog`.
 The messages will be omitted when building without `DEBUG` build variable.
-To force logs to also appear in production build use `LLogF` instead.
+To force logs to also appear with production build configs use `LLogF` instead.
 
 
 ## Screenshot
