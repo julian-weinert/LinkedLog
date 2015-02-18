@@ -5,12 +5,13 @@ The `LLog` macro will work like `NSLog` but additionally prints the file name an
 
 LinkedLog then parses the logs and adds links the the corresponding file and line.
 
-[![Build Status](https://travis-ci.org/julian-weinert/LinkedLog.svg?branch=master)](https://travis-ci.org/julian-weinert/LinkedLog)
-[![LinkedLog chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/julian-weinert/LinkedLog?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 [![Stories ToDo](https://badge.waffle.io/julian-weinert/linkedlog.svg?label=todo&title=ToDo)](http://waffle.io/julian-weinert/linkedlog)
 [![Stories in Progress](https://badge.waffle.io/julian-weinert/linkedlog.svg?label=progress&title=In%20Progress)](http://waffle.io/julian-weinert/linkedlog)
 [![Stories Done](https://badge.waffle.io/julian-weinert/linkedlog.svg?label=done&title=Done)](http://waffle.io/julian-weinert/linkedlog)
+
+[![Build Status](https://travis-ci.org/julian-weinert/LinkedLog.svg?branch=master)](https://travis-ci.org/julian-weinert/LinkedLog)
+[![LinkedLog chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/julian-weinert/LinkedLog?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
 ## Install
