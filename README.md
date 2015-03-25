@@ -46,8 +46,6 @@ To force logs to also appear with production build configs use `LLogF` instead.
 
 ## Bugs and limitations
 
-* The `LLog` and `LLogF` macros are currently not supported in iOS.
-
 
 ### Pull requests
 
