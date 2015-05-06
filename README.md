@@ -29,7 +29,7 @@ LinkedLog then parses the logs and adds links to the corresponding file and line
 * In Xcode select add files to the project.
 * Select the *PCH File+LLog* file template from the *LinkedLog templates* section.
 * Navigate to your build settings, search for **prefix** and add the created file to "Prefix header"
-* Replace all `NSLog` calles with `LLog` or `LLogF`
+* Replace all `NSLog` calls with `LLog` or `LLogF`
 
 
 ## Usage
